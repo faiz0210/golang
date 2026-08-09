@@ -22,8 +22,12 @@ func main() {
 	profit := ebt * (1 - taxRate/100)
 	ratio := ebt / profit
 
-	fmt.Println(ebt)
-	fmt.Println(profit)
-	fmt.Println(ratio)
+	fmt.Printf("Earning Before Tax: %.2f\nProfit: %.2f\nRatio: %.2f\n", ebt, profit, ratio)
+	//fmt.Printf(`Multiline -- Earning Before Tax: %.2f
+	//Profit: %.2f
+	//Ratio: %.2f`, ebt, profit, ratio)
+
+	//storingAll := fmt.Sprintf("Earning Before Tax: %.2f\nProfit: %.2f\nRatio: %.2f\n", ebt, profit, ratio)
+	//print(storingAll)
 
 }
