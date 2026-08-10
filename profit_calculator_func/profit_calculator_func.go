@@ -10,6 +10,7 @@ func main() {
 	fmt.Printf("EBT: %.2f\nProfit: %.2f\nRatio: %.2f\n", ebt, profit, ratio)
 }
 
+// Performing calculations
 func calculate_financials(revenue, expenses, taxRate float64) (float64, float64, float64) {
 	ebt := revenue - expenses
 	profit := ebt * (1 - taxRate/100)
@@ -17,6 +18,7 @@ func calculate_financials(revenue, expenses, taxRate float64) (float64, float64,
 	return ebt, profit, ratio
 }
 
+// Taking user input
 func getUserInput(infoText string) (float64, float64, float64) {
 	var userInputRevenue, userInputTaxRate, userInputexpenses float64
 	fmt.Print(infoText)
