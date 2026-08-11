@@ -25,7 +25,7 @@ func main() {
 		case 1:
 			fmt.Println("Your Balance is: ", accountBalance)
 		case 2:
-			fmt.Println("Your deposit: ")
+			fmt.Print("Your deposit: ")
 			var depositAmount float64
 			fmt.Scan(&depositAmount)
 			if depositAmount <= 0 {
