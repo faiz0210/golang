@@ -20,7 +20,7 @@ func main() {
 	}
 	expenses, err := getUserInput("Enter your Expenses: ")
 	if err != nil {
-		fmt.Println(err)
+		//		fmt.Println(err)
 		panic(err)
 	}
 
